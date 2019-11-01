@@ -1,0 +1,27 @@
+//question number 2 page 79
+#include<iostream>
+using namespace std;
+
+//function prototype
+void swap(int, int);
+
+int main()
+{
+	int x = 10, y = 79;
+	cout << "The original value of x is " << x << endl;
+	cout << "The original value of y is " << y << endl;
+	swap(x, y);
+	return 0;
+}
+
+void swap(int x, int y)
+{
+	//swap(x,y);
+	int z = 0;
+	z = x;
+	x = y;
+	y = z;
+
+	cout << "The new value for x is "<<x<<endl;
+	cout << "The new value for y is "<<y<<endl;
+}
