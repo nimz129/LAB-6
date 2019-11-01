@@ -1,0 +1,24 @@
+//question 3 page 79
+#include<iostream>
+using namespace std;
+
+double total(double, double);
+const double gall = 0.264179;
+double ans, litre, km;
+int main()
+{
+	cout << "Enter number of litre of petrol of your car : ";
+	cin >> litre;
+	cout << "Enter number of kilometres that the car travelled : ";
+	cin >> km;
+	total(km, litre);
+	cout << "The number of kilometre per gallon of  the car delivered is " << ans;
+	return 0;
+}
+
+double total(double km, double litre)
+{
+
+	ans = (km) / (litre * gall);
+	return ans;
+}
